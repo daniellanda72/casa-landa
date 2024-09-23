@@ -3,59 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa Landa - Ferretería</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Archivo CSS externo -->
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: darkblue;
+        }
+        p {
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+            display: inline-block;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: darkblue;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: blue;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Casa Landa</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre Nosotros</a></li>
-                <li><a href="#products">Productos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <h1>¡Bienvenido a mi página web!</h1>
+    <p>Esta es una página web creada con Notepad++.</p>
 
-    <section id="about">
-        <h2>Sobre Nosotros</h2>
-        <p>Bienvenido a Casa Landa, su ferretería de confianza. Ofrecemos una amplia variedad de productos para el hogar y la industria.</p>
-    </section>
+    <form action="https://formspree.io/f/tu-enlace-aqui" method="POST">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
 
-    <section id="products">
-        <h2>Productos</h2>
-        <ul>
-            <li>Herramientas de mano</li>
-            <li>Tuberías y accesorios</li>
-            <li>Pinturas y esmaltes</li>
-            <li>Materiales de construcción</li>
-        </ul>
-    </section>
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="_replyto" required>
 
-    <section id="contact">
-        <h2>Contacto</h2>
-        <form action="https://formspree.io/f/your-email" method="POST">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
 
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="_replyto" required>
-
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Casa Landa</p>
-        <div class="social">
-            <a href="https://facebook.com/casalandacomercio" target="_blank">Facebook</a>
-            <a href="https://instagram.com/casalandacomercio" target="_blank">Instagram</a>
-            <a href="https://twitter.com/casalandacomercio" target="_blank">Twitter</a>
-        </div>
-    </footer>
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>
