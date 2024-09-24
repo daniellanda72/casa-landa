@@ -8,9 +8,9 @@ html, body {
 body {
     font-family: Arial, sans-serif;
     background-image: url('imagen.jpg'); /* Agrega la imagen de fondo */
-    background-size: 100% auto; /* Ajusta la imagen para que se vea completamente sin perder los bordes */
+    background-size: contain; /* Ajusta la imagen para que se vea completa */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center top; /* Centra la imagen en la parte superior */
+    background-position: center; /* Centra la imagen en la pantalla */
     background-attachment: fixed; /* Hace que la imagen permanezca fija al hacer scroll */
     text-align: center;
 }
@@ -42,7 +42,7 @@ nav ul li a {
 
 section {
     padding: 40px 20px;
-    background-color: rgba(211, 211, 211, 0.7); /* Gris claro y translúcido */
+    background-color: rgba(211, 211, 211, 0.7); /* Fondo gris claro y translúcido */
     margin: 20px auto;
     width: 80%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
