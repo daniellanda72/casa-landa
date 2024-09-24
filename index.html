@@ -8,25 +8,23 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('EntradaAtalaya.jpg'); /* Reemplaza con la ruta de tu imagen */
+            background-image: url('imagen.jpg'); /* Reemplaza con la ruta de tu imagen */
             background-size: cover; /* La imagen cubrirá toda la página */
             background-repeat: no-repeat; /* Evita que la imagen se repita */
             background-position: center; /* Centra la imagen */
-            color: #fff; /* Cambia el color del texto para asegurarte de que sea visible sobre la imagen */
+            color: #fff;
             margin: 0;
             padding: 0;
         }
 
-        /* Ajusta el resto de tus estilos si es necesario */
-        header, section, footer {
-            background: rgba(211, 211, 211, 0.4); /* Fondo gris claro y más translúcido */
-            padding: 20px;
-            border-radius: 5px;
+        header {
+            background-color: darkblue;
+            padding: 20px 0;
         }
 
         header h1 {
+            color: lightblue; /* Cambia el color del texto a azul claro */
             margin: 0;
-            color: darkblue; /* Color azul para el encabezado */
         }
 
         nav ul {
@@ -40,12 +38,13 @@
         }
 
         nav ul li a {
-            color: darkblue; /* Color de los enlaces */
+            color: white;
             text-decoration: none;
         }
 
         section {
             padding: 40px 20px;
+            background-color: rgba(211, 211, 211, 0.7); /* Gris clarito translúcido */
             margin: 20px auto;
             width: 80%;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -87,6 +86,9 @@
         }
 
         footer {
+            background-color: darkblue;
+            color: white;
+            padding: 20px;
             margin-top: 20px;
         }
 
@@ -100,6 +102,32 @@
             text-decoration: underline;
         }
     </style>
+
+    <script>
+        function clearFormAfterSubmission(event) {
+            event.preventDefault(); // Evita el envío por defecto
+            const form = document.getElementById("contactForm");
+            
+            // Enviar los datos del formulario usando fetch
+            fetch(form.action, {
+                method: form.method,
+                body: new FormData(form),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    // Si el envío fue exitoso, limpia el formulario
+                    alert("¡Formulario enviado con éxito!"); // Mensaje de confirmación
+                    form.reset(); // Limpia el formulario
+                } else {
+                    alert("Hubo un problema al enviar el formulario.");
+                }
+            }).catch(error => {
+                alert("Hubo un error al enviar el formulario.");
+            });
+        }
+    </script>
 </head>
 <body>
     <header>
