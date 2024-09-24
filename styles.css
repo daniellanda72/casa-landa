@@ -12,14 +12,13 @@ body {
 
 header {
     background-color: darkblue;
-    color: lightblue; /* Cambia el color del texto a azul claro */
     padding: 20px 0;
 }
 
 header h1 {
     color: lightblue; /* Cambia el color del texto a azul claro */
+    margin: 0;
 }
-
 
 nav ul {
     list-style-type: none;
