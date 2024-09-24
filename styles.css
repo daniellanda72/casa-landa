@@ -8,9 +8,9 @@ html, body {
 body {
     font-family: Arial, sans-serif;
     background-image: url('imagen.jpg'); /* Agrega la imagen de fondo */
-    background-size: contain; /* Ajusta la imagen para que se vea completamente */
+    background-size: 100% auto; /* Ajusta la imagen para que se vea completamente sin perder los bordes */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center; /* Centra la imagen */
+    background-position: center top; /* Centra la imagen en la parte superior */
     background-attachment: fixed; /* Hace que la imagen permanezca fija al hacer scroll */
     text-align: center;
 }
