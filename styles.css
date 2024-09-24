@@ -56,6 +56,10 @@ form {
 form label {
     margin: 10px 0 5px;
 }
+form label {
+    margin: 10px 0 5px;
+    color: #333; /* Asigna el color a los labels */
+}
 
 form input, form textarea {
     width: 80%;
