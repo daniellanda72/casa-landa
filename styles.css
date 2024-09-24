@@ -18,6 +18,7 @@ header {
 header h1 {
     color: lightblue; /* Cambia el color del texto a azul claro */
     margin: 0;
+	font-size: 48px; /* Ajusta el tamaño de la fuente (puedes cambiar este valor) */
 }
 
 nav ul {
