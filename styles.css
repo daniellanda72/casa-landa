@@ -12,7 +12,7 @@ body {
 
 header {
     background-color: darkblue;
-    color: white;
+    color: lightblue; /* Cambia el color del texto a azul claro */
     padding: 20px 0;
 }
 
