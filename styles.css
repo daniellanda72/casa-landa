@@ -31,7 +31,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #333;
     text-decoration: none;
 }
 
@@ -80,14 +80,14 @@ button:hover {
 
 footer {
     background-color: darkblue;
-    color: white;
+    color: #333;
     padding: 20px;
     margin-top: 20px;
 }
 
 .social a {
     margin: 0 10px;
-    color: white;
+    color: #333;
     text-decoration: none;
 }
 
