@@ -105,13 +105,11 @@ header p {
     font-size: 18px; /* Ajusta el tamaño de la fuente */
     margin: 5px 0; /* Ajusta el espacio alrededor del texto */
 }
-#whatsapp-icon {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+
+#whatsapp-icon img {
     width: 50px; /* Ajusta el tamaño del ícono */
-    height: 50px;
-    z-index: 100; /* Asegura que el ícono quede por encima de otros elementos */
+    height: 50px; /* Ajusta el tamaño del ícono */
+    cursor: pointer;
 }
 
 #whatsapp-icon {
