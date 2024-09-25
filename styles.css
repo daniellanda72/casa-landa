@@ -100,3 +100,9 @@ footer {
 .social a:hover {
     text-decoration: underline;
 }
+header p {
+    color: lightgray; /* Cambia el color si lo deseas */
+    font-size: 18px; /* Ajusta el tamaño de la fuente */
+    margin: 5px 0; /* Ajusta el espacio alrededor del texto */
+}
+
