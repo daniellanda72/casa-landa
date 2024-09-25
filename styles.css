@@ -20,10 +20,6 @@ header h1 {
     margin: 0;
 	font-size: 48px; /* Ajusta el tamaño de la fuente (puedes cambiar este valor) */
 }
-header p {
-    color: #4a4a4a; /* Cambia este valor por el color que prefieras */
-}
-
 
 nav ul {
     list-style-type: none;
